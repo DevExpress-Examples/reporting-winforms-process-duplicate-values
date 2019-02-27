@@ -16,7 +16,7 @@ namespace ProcessDuplicatesTarget
         public void NoMerge() {
             this.ShowPreviewDialog();
         }
-        // Merge duplicate the XRControl.Tag property's values.
+        // Merge duplicate values of the XRControl.Tag property.
         public void MergeByTag() {
             ExpressionBinding expressionBinding = new ExpressionBinding("BeforePrint", "Tag", "ToStr([SupplierID]) + '_' + ToStr([CategoryID])");
             this.xrTableCell2.ExpressionBindings.Add(expressionBinding);
