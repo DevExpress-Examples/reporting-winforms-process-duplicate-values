@@ -1,5 +1,5 @@
 ﻿Namespace ProcessDuplicatesTarget
-	Partial Public Class ProductsReport
+	Partial Public Class ProductReport
 		''' <summary>
 		''' Required designer variable.
 		''' </summary>
@@ -48,17 +48,33 @@
 			Dim columnExpression10 As New DevExpress.DataAccess.Sql.ColumnExpression()
 			Dim column11 As New DevExpress.DataAccess.Sql.Column()
 			Dim columnExpression11 As New DevExpress.DataAccess.Sql.ColumnExpression()
+			Dim table2 As New DevExpress.DataAccess.Sql.Table()
 			Dim column12 As New DevExpress.DataAccess.Sql.Column()
 			Dim columnExpression12 As New DevExpress.DataAccess.Sql.ColumnExpression()
-			Dim table2 As New DevExpress.DataAccess.Sql.Table()
-			Dim column13 As New DevExpress.DataAccess.Sql.Column()
-			Dim columnExpression13 As New DevExpress.DataAccess.Sql.ColumnExpression()
 			Dim table3 As New DevExpress.DataAccess.Sql.Table()
 			Dim join1 As New DevExpress.DataAccess.Sql.Join()
 			Dim relationColumnInfo1 As New DevExpress.DataAccess.Sql.RelationColumnInfo()
 			Dim join2 As New DevExpress.DataAccess.Sql.Join()
 			Dim relationColumnInfo2 As New DevExpress.DataAccess.Sql.RelationColumnInfo()
-			Dim resources As New System.ComponentModel.ComponentResourceManager(GetType(ProductsReport))
+			Dim resources As New System.ComponentModel.ComponentResourceManager(GetType(ProductReport))
+			Me.TopMargin = New DevExpress.XtraReports.UI.TopMarginBand()
+			Me.BottomMargin = New DevExpress.XtraReports.UI.BottomMarginBand()
+			Me.ReportHeader = New DevExpress.XtraReports.UI.ReportHeaderBand()
+			Me.Detail = New DevExpress.XtraReports.UI.DetailBand()
+			Me.groupHeaderBand1 = New DevExpress.XtraReports.UI.GroupHeaderBand()
+			Me.xrLine1 = New DevExpress.XtraReports.UI.XRLine()
+			Me.label1 = New DevExpress.XtraReports.UI.XRLabel()
+			Me.xrTable1 = New DevExpress.XtraReports.UI.XRTable()
+			Me.xrTableRow1 = New DevExpress.XtraReports.UI.XRTableRow()
+			Me.xrTableCell2 = New DevExpress.XtraReports.UI.XRTableCell()
+			Me.xrTableCell3 = New DevExpress.XtraReports.UI.XRTableCell()
+			Me.xrTableCell4 = New DevExpress.XtraReports.UI.XRTableCell()
+			Me.xrTable2 = New DevExpress.XtraReports.UI.XRTable()
+			Me.xrLabel1 = New DevExpress.XtraReports.UI.XRLabel()
+			Me.xrTableRow2 = New DevExpress.XtraReports.UI.XRTableRow()
+			Me.xrTableCell6 = New DevExpress.XtraReports.UI.XRTableCell()
+			Me.xrTableCell7 = New DevExpress.XtraReports.UI.XRTableCell()
+			Me.xrTableCell8 = New DevExpress.XtraReports.UI.XRTableCell()
 			Me.sqlDataSource1 = New DevExpress.DataAccess.Sql.SqlDataSource(Me.components)
 			Me.Title = New DevExpress.XtraReports.UI.XRControlStyle()
 			Me.GroupCaption2 = New DevExpress.XtraReports.UI.XRControlStyle()
@@ -68,35 +84,185 @@
 			Me.GroupFooterBackground3 = New DevExpress.XtraReports.UI.XRControlStyle()
 			Me.DetailData3_Odd = New DevExpress.XtraReports.UI.XRControlStyle()
 			Me.PageInfo = New DevExpress.XtraReports.UI.XRControlStyle()
-			Me.TopMargin = New DevExpress.XtraReports.UI.TopMarginBand()
-			Me.BottomMargin = New DevExpress.XtraReports.UI.BottomMarginBand()
-			Me.ReportHeader = New DevExpress.XtraReports.UI.ReportHeaderBand()
-			Me.xrLine1 = New DevExpress.XtraReports.UI.XRLine()
-			Me.label1 = New DevExpress.XtraReports.UI.XRLabel()
-			Me.Detail = New DevExpress.XtraReports.UI.DetailBand()
-			Me.xrTable1 = New DevExpress.XtraReports.UI.XRTable()
-			Me.xrTableRow1 = New DevExpress.XtraReports.UI.XRTableRow()
-			Me.xrTableCell2 = New DevExpress.XtraReports.UI.XRTableCell()
-			Me.xrTableCell3 = New DevExpress.XtraReports.UI.XRTableCell()
-			Me.xrTableCell4 = New DevExpress.XtraReports.UI.XRTableCell()
-			Me.groupHeaderBand1 = New DevExpress.XtraReports.UI.GroupHeaderBand()
-			Me.xrTable2 = New DevExpress.XtraReports.UI.XRTable()
-			Me.xrTableRow2 = New DevExpress.XtraReports.UI.XRTableRow()
-			Me.xrTableCell6 = New DevExpress.XtraReports.UI.XRTableCell()
-			Me.xrTableCell7 = New DevExpress.XtraReports.UI.XRTableCell()
-			Me.xrTableCell8 = New DevExpress.XtraReports.UI.XRTableCell()
-			Me.xrLabel1 = New DevExpress.XtraReports.UI.XRLabel()
 			Me.SupplierCategory = New DevExpress.XtraReports.UI.CalculatedField()
-			CType(Me.xrTable1, System.ComponentModel.ISupportInitialize).BeginInit()
-			CType(Me.xrTable2, System.ComponentModel.ISupportInitialize).BeginInit()
-			CType(Me, System.ComponentModel.ISupportInitialize).BeginInit()
+			DirectCast(Me.xrTable1, System.ComponentModel.ISupportInitialize).BeginInit()
+			DirectCast(Me.xrTable2, System.ComponentModel.ISupportInitialize).BeginInit()
+			DirectCast(Me, System.ComponentModel.ISupportInitialize).BeginInit()
+			' 
+			' TopMargin
+			' 
+			Me.TopMargin.HeightF = 47F
+			Me.TopMargin.Name = "TopMargin"
+			' 
+			' BottomMargin
+			' 
+			Me.BottomMargin.Name = "BottomMargin"
+			' 
+			' ReportHeader
+			' 
+			Me.ReportHeader.Controls.AddRange(New DevExpress.XtraReports.UI.XRControl() { Me.xrLine1, Me.label1})
+			Me.ReportHeader.HeightF = 45.50001F
+			Me.ReportHeader.Name = "ReportHeader"
+			' 
+			' Detail
+			' 
+			Me.Detail.Controls.AddRange(New DevExpress.XtraReports.UI.XRControl() { Me.xrTable1})
+			Me.Detail.HeightF = 25F
+			Me.Detail.Name = "Detail"
+			' 
+			' groupHeaderBand1
+			' 
+			Me.groupHeaderBand1.Controls.AddRange(New DevExpress.XtraReports.UI.XRControl() { Me.xrTable2, Me.xrLabel1})
+			Me.groupHeaderBand1.GroupFields.AddRange(New DevExpress.XtraReports.UI.GroupField() { New DevExpress.XtraReports.UI.GroupField("SupplierID", DevExpress.XtraReports.UI.XRColumnSortOrder.Ascending)})
+			Me.groupHeaderBand1.HeightF = 66.45832F
+			Me.groupHeaderBand1.Name = "groupHeaderBand1"
+			' 
+			' xrLine1
+			' 
+			Me.xrLine1.LocationFloat = New DevExpress.Utils.PointFloat(0.9999593F, 43.41668F)
+			Me.xrLine1.Name = "xrLine1"
+			Me.xrLine1.SizeF = New System.Drawing.SizeF(734.7917F, 2.083332F)
+			' 
+			' label1
+			' 
+			Me.label1.Font = New System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Bold)
+			Me.label1.LocationFloat = New DevExpress.Utils.PointFloat(5.999979F, 6.00001F)
+			Me.label1.Name = "label1"
+			Me.label1.SizeF = New System.Drawing.SizeF(732.9999F, 29.41666F)
+			Me.label1.StyleName = "Title"
+			Me.label1.StylePriority.UseFont = False
+			Me.label1.Text = "Products"
+			' 
+			' xrTable1
+			' 
+			Me.xrTable1.Font = New System.Drawing.Font("Arial", 9F)
+			Me.xrTable1.LocationFloat = New DevExpress.Utils.PointFloat(0F, 0F)
+			Me.xrTable1.Name = "xrTable1"
+			Me.xrTable1.Padding = New DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 100F)
+			Me.xrTable1.Rows.AddRange(New DevExpress.XtraReports.UI.XRTableRow() { Me.xrTableRow1})
+			Me.xrTable1.SizeF = New System.Drawing.SizeF(738.9999F, 25F)
+			Me.xrTable1.StylePriority.UseFont = False
+			Me.xrTable1.StylePriority.UsePadding = False
+			' 
+			' xrTableRow1
+			' 
+			Me.xrTableRow1.Cells.AddRange(New DevExpress.XtraReports.UI.XRTableCell() { Me.xrTableCell2, Me.xrTableCell3, Me.xrTableCell4})
+			Me.xrTableRow1.Name = "xrTableRow1"
+			Me.xrTableRow1.Weight = 11.5R
+			' 
+			' xrTableCell2
+			' 
+			Me.xrTableCell2.BackColor = System.Drawing.Color.Transparent
+			Me.xrTableCell2.ExpressionBindings.AddRange(New DevExpress.XtraReports.UI.ExpressionBinding() { New DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[CategoryName]")})
+			Me.xrTableCell2.Multiline = True
+			Me.xrTableCell2.Name = "xrTableCell2"
+			Me.xrTableCell2.Padding = New DevExpress.XtraPrinting.PaddingInfo(10, 2, 0, 0, 100F)
+			Me.xrTableCell2.StylePriority.UseBackColor = False
+			Me.xrTableCell2.StylePriority.UsePadding = False
+			Me.xrTableCell2.StylePriority.UseTextAlignment = False
+			Me.xrTableCell2.Text = "xrTableCell2"
+			Me.xrTableCell2.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft
+			Me.xrTableCell2.Weight = 0.36534009739786377R
+			' 
+			' xrTableCell3
+			' 
+			Me.xrTableCell3.ExpressionBindings.AddRange(New DevExpress.XtraReports.UI.ExpressionBinding() { New DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[ProductName]")})
+			Me.xrTableCell3.Multiline = True
+			Me.xrTableCell3.Name = "xrTableCell3"
+			Me.xrTableCell3.Padding = New DevExpress.XtraPrinting.PaddingInfo(10, 2, 0, 0, 100F)
+			Me.xrTableCell3.StylePriority.UsePadding = False
+			Me.xrTableCell3.StylePriority.UseTextAlignment = False
+			Me.xrTableCell3.Text = "xrTableCell3"
+			Me.xrTableCell3.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft
+			Me.xrTableCell3.Weight = 0.913928918415011R
+			' 
+			' xrTableCell4
+			' 
+			Me.xrTableCell4.ExpressionBindings.AddRange(New DevExpress.XtraReports.UI.ExpressionBinding() { New DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[UnitPrice]")})
+			Me.xrTableCell4.Multiline = True
+			Me.xrTableCell4.Name = "xrTableCell4"
+			Me.xrTableCell4.Padding = New DevExpress.XtraPrinting.PaddingInfo(10, 2, 0, 0, 100F)
+			Me.xrTableCell4.StylePriority.UsePadding = False
+			Me.xrTableCell4.StylePriority.UseTextAlignment = False
+			Me.xrTableCell4.Text = "xrTableCell4"
+			Me.xrTableCell4.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft
+			Me.xrTableCell4.TextFormatString = "{0:$0.00}"
+			Me.xrTableCell4.Weight = 0.32560342289226796R
+			' 
+			' xrTable2
+			' 
+			Me.xrTable2.BackColor = System.Drawing.Color.Gainsboro
+			Me.xrTable2.Font = New System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold)
+			Me.xrTable2.LocationFloat = New DevExpress.Utils.PointFloat(0F, 41.45832F)
+			Me.xrTable2.Name = "xrTable2"
+			Me.xrTable2.Rows.AddRange(New DevExpress.XtraReports.UI.XRTableRow() { Me.xrTableRow2})
+			Me.xrTable2.SizeF = New System.Drawing.SizeF(739F, 25F)
+			Me.xrTable2.StylePriority.UseBackColor = False
+			Me.xrTable2.StylePriority.UseFont = False
+			' 
+			' xrLabel1
+			' 
+			Me.xrLabel1.BackColor = System.Drawing.Color.Transparent
+			Me.xrLabel1.ExpressionBindings.AddRange(New DevExpress.XtraReports.UI.ExpressionBinding() { New DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[CompanyName]")})
+			Me.xrLabel1.Font = New System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold)
+			Me.xrLabel1.ForeColor = System.Drawing.Color.DimGray
+			Me.xrLabel1.LocationFloat = New DevExpress.Utils.PointFloat(0F, 13.95833F)
+			Me.xrLabel1.Multiline = True
+			Me.xrLabel1.Name = "xrLabel1"
+			Me.xrLabel1.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F)
+			Me.xrLabel1.SizeF = New System.Drawing.SizeF(738.9999F, 27.49999F)
+			Me.xrLabel1.StylePriority.UseBackColor = False
+			Me.xrLabel1.StylePriority.UseFont = False
+			Me.xrLabel1.StylePriority.UseForeColor = False
+			Me.xrLabel1.StylePriority.UseTextAlignment = False
+			Me.xrLabel1.Text = "xrLabel1"
+			Me.xrLabel1.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter
+			Me.xrLabel1.TextFormatString = "Company  ""{0}"""
+			' 
+			' xrTableRow2
+			' 
+			Me.xrTableRow2.Cells.AddRange(New DevExpress.XtraReports.UI.XRTableCell() { Me.xrTableCell6, Me.xrTableCell7, Me.xrTableCell8})
+			Me.xrTableRow2.Font = New System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold)
+			Me.xrTableRow2.Name = "xrTableRow2"
+			Me.xrTableRow2.StylePriority.UseFont = False
+			Me.xrTableRow2.Weight = 11.5R
+			' 
+			' xrTableCell6
+			' 
+			Me.xrTableCell6.Multiline = True
+			Me.xrTableCell6.Name = "xrTableCell6"
+			Me.xrTableCell6.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F)
+			Me.xrTableCell6.StylePriority.UseTextAlignment = False
+			Me.xrTableCell6.Text = "  Category Name"
+			Me.xrTableCell6.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft
+			Me.xrTableCell6.Weight = 0.58764711444440976R
+			' 
+			' xrTableCell7
+			' 
+			Me.xrTableCell7.Multiline = True
+			Me.xrTableCell7.Name = "xrTableCell7"
+			Me.xrTableCell7.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F)
+			Me.xrTableCell7.StylePriority.UseTextAlignment = False
+			Me.xrTableCell7.Text = "  Product Name"
+			Me.xrTableCell7.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft
+			Me.xrTableCell7.Weight = 1.4700490489218223R
+			' 
+			' xrTableCell8
+			' 
+			Me.xrTableCell8.Multiline = True
+			Me.xrTableCell8.Name = "xrTableCell8"
+			Me.xrTableCell8.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F)
+			Me.xrTableCell8.StylePriority.UseTextAlignment = False
+			Me.xrTableCell8.Text = "  Unit Price"
+			Me.xrTableCell8.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft
+			Me.xrTableCell8.Weight = 0.52373158972915079R
 			' 
 			' sqlDataSource1
 			' 
-			Me.sqlDataSource1.ConnectionName = "nwind 1"
+			Me.sqlDataSource1.ConnectionName = "localhost_Northwind_Connection"
 			Me.sqlDataSource1.Name = "sqlDataSource1"
 			columnExpression1.ColumnName = "ProductID"
-			table1.MetaSerializable = "<Meta X=""30"" Y=""30"" Width=""125"" Height=""267"" />"
+			table1.MetaSerializable = "<Meta X=""30"" Y=""30"" Width=""125"" Height=""285"" />"
 			table1.Name = "Products"
 			columnExpression1.Table = table1
 			column1.Expression = columnExpression1
@@ -127,19 +293,16 @@
 			columnExpression10.ColumnName = "Discontinued"
 			columnExpression10.Table = table1
 			column10.Expression = columnExpression10
-			columnExpression11.ColumnName = "EAN13"
-			columnExpression11.Table = table1
-			column11.Expression = columnExpression11
-			columnExpression12.ColumnName = "CompanyName"
-			table2.MetaSerializable = "<Meta X=""185"" Y=""30"" Width=""125"" Height=""286"" />"
+			columnExpression11.ColumnName = "CompanyName"
+			table2.MetaSerializable = "<Meta X=""185"" Y=""30"" Width=""125"" Height=""305"" />"
 			table2.Name = "Suppliers"
-			columnExpression12.Table = table2
-			column12.Expression = columnExpression12
-			columnExpression13.ColumnName = "CategoryName"
-			table3.MetaSerializable = "<Meta X=""340"" Y=""30"" Width=""125"" Height=""172"" />"
+			columnExpression11.Table = table2
+			column11.Expression = columnExpression11
+			columnExpression12.ColumnName = "CategoryName"
+			table3.MetaSerializable = "<Meta X=""340"" Y=""30"" Width=""125"" Height=""125"" />"
 			table3.Name = "Categories"
-			columnExpression13.Table = table3
-			column13.Expression = columnExpression13
+			columnExpression12.Table = table3
+			column12.Expression = columnExpression12
 			selectQuery1.Columns.Add(column1)
 			selectQuery1.Columns.Add(column2)
 			selectQuery1.Columns.Add(column3)
@@ -152,7 +315,6 @@
 			selectQuery1.Columns.Add(column10)
 			selectQuery1.Columns.Add(column11)
 			selectQuery1.Columns.Add(column12)
-			selectQuery1.Columns.Add(column13)
 			selectQuery1.Name = "Products"
 			relationColumnInfo1.NestedKeyColumn = "SupplierID"
 			relationColumnInfo1.ParentKeyColumn = "SupplierID"
@@ -260,174 +422,6 @@
 			Me.PageInfo.Name = "PageInfo"
 			Me.PageInfo.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F)
 			' 
-			' TopMargin
-			' 
-			Me.TopMargin.HeightF = 47F
-			Me.TopMargin.Name = "TopMargin"
-			' 
-			' BottomMargin
-			' 
-			Me.BottomMargin.Name = "BottomMargin"
-			' 
-			' ReportHeader
-			' 
-			Me.ReportHeader.Controls.AddRange(New DevExpress.XtraReports.UI.XRControl() { Me.xrLine1, Me.label1})
-			Me.ReportHeader.HeightF = 45.50001F
-			Me.ReportHeader.Name = "ReportHeader"
-			' 
-			' xrLine1
-			' 
-			Me.xrLine1.LocationFloat = New DevExpress.Utils.PointFloat(0.9999593F, 43.41668F)
-			Me.xrLine1.Name = "xrLine1"
-			Me.xrLine1.SizeF = New System.Drawing.SizeF(734.7917F, 2.083332F)
-			' 
-			' label1
-			' 
-			Me.label1.Font = New System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Bold)
-			Me.label1.LocationFloat = New DevExpress.Utils.PointFloat(5.999979F, 6.00001F)
-			Me.label1.Name = "label1"
-			Me.label1.SizeF = New System.Drawing.SizeF(732.9999F, 29.41666F)
-			Me.label1.StyleName = "Title"
-			Me.label1.StylePriority.UseFont = False
-			Me.label1.Text = "Products"
-			' 
-			' Detail
-			' 
-			Me.Detail.Controls.AddRange(New DevExpress.XtraReports.UI.XRControl() { Me.xrTable1})
-			Me.Detail.HeightF = 25F
-			Me.Detail.Name = "Detail"
-			' 
-			' xrTable1
-			' 
-			Me.xrTable1.Font = New System.Drawing.Font("Arial", 9F)
-			Me.xrTable1.LocationFloat = New DevExpress.Utils.PointFloat(0F, 0F)
-			Me.xrTable1.Name = "xrTable1"
-			Me.xrTable1.Padding = New DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 100F)
-			Me.xrTable1.Rows.AddRange(New DevExpress.XtraReports.UI.XRTableRow() { Me.xrTableRow1})
-			Me.xrTable1.SizeF = New System.Drawing.SizeF(738.9999F, 25F)
-			Me.xrTable1.StylePriority.UseFont = False
-			Me.xrTable1.StylePriority.UsePadding = False
-			' 
-			' xrTableRow1
-			' 
-			Me.xrTableRow1.Cells.AddRange(New DevExpress.XtraReports.UI.XRTableCell() { Me.xrTableCell2, Me.xrTableCell3, Me.xrTableCell4})
-			Me.xrTableRow1.Name = "xrTableRow1"
-			Me.xrTableRow1.Weight = 11.5R
-			' 
-			' xrTableCell2
-			' 
-			Me.xrTableCell2.BackColor = System.Drawing.Color.Transparent
-			Me.xrTableCell2.ExpressionBindings.AddRange(New DevExpress.XtraReports.UI.ExpressionBinding() { New DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[CategoryName]")})
-			Me.xrTableCell2.Multiline = True
-			Me.xrTableCell2.Name = "xrTableCell2"
-			Me.xrTableCell2.Padding = New DevExpress.XtraPrinting.PaddingInfo(10, 2, 0, 0, 100F)
-			Me.xrTableCell2.StylePriority.UseBackColor = False
-			Me.xrTableCell2.StylePriority.UsePadding = False
-			Me.xrTableCell2.StylePriority.UseTextAlignment = False
-			Me.xrTableCell2.Text = "xrTableCell2"
-			Me.xrTableCell2.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft
-			Me.xrTableCell2.Weight = 0.36534009739786377R
-			' 
-			' xrTableCell3
-			' 
-			Me.xrTableCell3.ExpressionBindings.AddRange(New DevExpress.XtraReports.UI.ExpressionBinding() { New DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[ProductName]")})
-			Me.xrTableCell3.Multiline = True
-			Me.xrTableCell3.Name = "xrTableCell3"
-			Me.xrTableCell3.Padding = New DevExpress.XtraPrinting.PaddingInfo(10, 2, 0, 0, 100F)
-			Me.xrTableCell3.StylePriority.UsePadding = False
-			Me.xrTableCell3.StylePriority.UseTextAlignment = False
-			Me.xrTableCell3.Text = "xrTableCell3"
-			Me.xrTableCell3.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft
-			Me.xrTableCell3.Weight = 0.913928918415011R
-			' 
-			' xrTableCell4
-			' 
-			Me.xrTableCell4.ExpressionBindings.AddRange(New DevExpress.XtraReports.UI.ExpressionBinding() { New DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[UnitPrice]")})
-			Me.xrTableCell4.Multiline = True
-			Me.xrTableCell4.Name = "xrTableCell4"
-			Me.xrTableCell4.Padding = New DevExpress.XtraPrinting.PaddingInfo(10, 2, 0, 0, 100F)
-			Me.xrTableCell4.StylePriority.UsePadding = False
-			Me.xrTableCell4.StylePriority.UseTextAlignment = False
-			Me.xrTableCell4.Text = "xrTableCell4"
-			Me.xrTableCell4.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft
-			Me.xrTableCell4.TextFormatString = "{0:$0.00}"
-			Me.xrTableCell4.Weight = 0.32560342289226796R
-			' 
-			' groupHeaderBand1
-			' 
-			Me.groupHeaderBand1.Controls.AddRange(New DevExpress.XtraReports.UI.XRControl() { Me.xrTable2, Me.xrLabel1})
-			Me.groupHeaderBand1.GroupFields.AddRange(New DevExpress.XtraReports.UI.GroupField() { New DevExpress.XtraReports.UI.GroupField("SupplierID", DevExpress.XtraReports.UI.XRColumnSortOrder.Ascending)})
-			Me.groupHeaderBand1.HeightF = 66.45832F
-			Me.groupHeaderBand1.Name = "groupHeaderBand1"
-			' 
-			' xrTable2
-			' 
-			Me.xrTable2.BackColor = System.Drawing.Color.Gainsboro
-			Me.xrTable2.Font = New System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold)
-			Me.xrTable2.LocationFloat = New DevExpress.Utils.PointFloat(0F, 41.45832F)
-			Me.xrTable2.Name = "xrTable2"
-			Me.xrTable2.Rows.AddRange(New DevExpress.XtraReports.UI.XRTableRow() { Me.xrTableRow2})
-			Me.xrTable2.SizeF = New System.Drawing.SizeF(739F, 25F)
-			Me.xrTable2.StylePriority.UseBackColor = False
-			Me.xrTable2.StylePriority.UseFont = False
-			' 
-			' xrTableRow2
-			' 
-			Me.xrTableRow2.Cells.AddRange(New DevExpress.XtraReports.UI.XRTableCell() { Me.xrTableCell6, Me.xrTableCell7, Me.xrTableCell8})
-			Me.xrTableRow2.Font = New System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold)
-			Me.xrTableRow2.Name = "xrTableRow2"
-			Me.xrTableRow2.StylePriority.UseFont = False
-			Me.xrTableRow2.Weight = 11.5R
-			' 
-			' xrTableCell6
-			' 
-			Me.xrTableCell6.Multiline = True
-			Me.xrTableCell6.Name = "xrTableCell6"
-			Me.xrTableCell6.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F)
-			Me.xrTableCell6.StylePriority.UseTextAlignment = False
-			Me.xrTableCell6.Text = "  Category Name"
-			Me.xrTableCell6.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft
-			Me.xrTableCell6.Weight = 0.58764711444440976R
-			' 
-			' xrTableCell7
-			' 
-			Me.xrTableCell7.Multiline = True
-			Me.xrTableCell7.Name = "xrTableCell7"
-			Me.xrTableCell7.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F)
-			Me.xrTableCell7.StylePriority.UseTextAlignment = False
-			Me.xrTableCell7.Text = "  Product Name"
-			Me.xrTableCell7.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft
-			Me.xrTableCell7.Weight = 1.4700490489218223R
-			' 
-			' xrTableCell8
-			' 
-			Me.xrTableCell8.Multiline = True
-			Me.xrTableCell8.Name = "xrTableCell8"
-			Me.xrTableCell8.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F)
-			Me.xrTableCell8.StylePriority.UseTextAlignment = False
-			Me.xrTableCell8.Text = "  Unit Price"
-			Me.xrTableCell8.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft
-			Me.xrTableCell8.Weight = 0.52373158972915079R
-			' 
-			' xrLabel1
-			' 
-			Me.xrLabel1.BackColor = System.Drawing.Color.Transparent
-			Me.xrLabel1.ExpressionBindings.AddRange(New DevExpress.XtraReports.UI.ExpressionBinding() { New DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[CompanyName]")})
-			Me.xrLabel1.Font = New System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold)
-			Me.xrLabel1.ForeColor = System.Drawing.Color.DimGray
-			Me.xrLabel1.LocationFloat = New DevExpress.Utils.PointFloat(0F, 13.95833F)
-			Me.xrLabel1.Multiline = True
-			Me.xrLabel1.Name = "xrLabel1"
-			Me.xrLabel1.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F)
-			Me.xrLabel1.SizeF = New System.Drawing.SizeF(738.9999F, 27.49999F)
-			Me.xrLabel1.StylePriority.UseBackColor = False
-			Me.xrLabel1.StylePriority.UseFont = False
-			Me.xrLabel1.StylePriority.UseForeColor = False
-			Me.xrLabel1.StylePriority.UseTextAlignment = False
-			Me.xrLabel1.Text = "xrLabel1"
-			Me.xrLabel1.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter
-			Me.xrLabel1.TextFormatString = "Company  ""{0}"""
-			' 
 			' SupplierCategory
 			' 
 			Me.SupplierCategory.DataMember = "Products"
@@ -435,7 +429,7 @@
 			Me.SupplierCategory.FieldType = DevExpress.XtraReports.UI.FieldType.String
 			Me.SupplierCategory.Name = "SupplierCategory"
 			' 
-			' ProductsReport
+			' ProductReport
 			' 
 			Me.Bands.AddRange(New DevExpress.XtraReports.UI.Band() { Me.TopMargin, Me.BottomMargin, Me.ReportHeader, Me.Detail, Me.groupHeaderBand1})
 			Me.CalculatedFields.AddRange(New DevExpress.XtraReports.UI.CalculatedField() { Me.SupplierCategory})
@@ -445,15 +439,33 @@
 			Me.Font = New System.Drawing.Font("Arial", 9.75F)
 			Me.Margins = New System.Drawing.Printing.Margins(49, 52, 47, 100)
 			Me.StyleSheet.AddRange(New DevExpress.XtraReports.UI.XRControlStyle() { Me.Title, Me.GroupCaption2, Me.GroupData2, Me.DetailCaption2, Me.DetailData2, Me.GroupFooterBackground3, Me.DetailData3_Odd, Me.PageInfo})
-			Me.Version = "19.1"
-			CType(Me.xrTable1, System.ComponentModel.ISupportInitialize).EndInit()
-			CType(Me.xrTable2, System.ComponentModel.ISupportInitialize).EndInit()
-			CType(Me, System.ComponentModel.ISupportInitialize).EndInit()
+			Me.Version = "20.1"
+			DirectCast(Me.xrTable1, System.ComponentModel.ISupportInitialize).EndInit()
+			DirectCast(Me.xrTable2, System.ComponentModel.ISupportInitialize).EndInit()
+			DirectCast(Me, System.ComponentModel.ISupportInitialize).EndInit()
 
 		End Sub
 
 		#End Region
 
+		Private TopMargin As DevExpress.XtraReports.UI.TopMarginBand
+		Private BottomMargin As DevExpress.XtraReports.UI.BottomMarginBand
+		Private ReportHeader As DevExpress.XtraReports.UI.ReportHeaderBand
+		Private xrLine1 As DevExpress.XtraReports.UI.XRLine
+		Private label1 As DevExpress.XtraReports.UI.XRLabel
+		Private Detail As DevExpress.XtraReports.UI.DetailBand
+		Private xrTable1 As DevExpress.XtraReports.UI.XRTable
+		Private xrTableRow1 As DevExpress.XtraReports.UI.XRTableRow
+		Private xrTableCell2 As DevExpress.XtraReports.UI.XRTableCell
+		Private xrTableCell3 As DevExpress.XtraReports.UI.XRTableCell
+		Private xrTableCell4 As DevExpress.XtraReports.UI.XRTableCell
+		Private groupHeaderBand1 As DevExpress.XtraReports.UI.GroupHeaderBand
+		Private xrTable2 As DevExpress.XtraReports.UI.XRTable
+		Private xrTableRow2 As DevExpress.XtraReports.UI.XRTableRow
+		Private xrTableCell6 As DevExpress.XtraReports.UI.XRTableCell
+		Private xrTableCell7 As DevExpress.XtraReports.UI.XRTableCell
+		Private xrTableCell8 As DevExpress.XtraReports.UI.XRTableCell
+		Private xrLabel1 As DevExpress.XtraReports.UI.XRLabel
 		Private sqlDataSource1 As DevExpress.DataAccess.Sql.SqlDataSource
 		Private Title As DevExpress.XtraReports.UI.XRControlStyle
 		Private GroupCaption2 As DevExpress.XtraReports.UI.XRControlStyle
@@ -463,24 +475,6 @@
 		Private GroupFooterBackground3 As DevExpress.XtraReports.UI.XRControlStyle
 		Private DetailData3_Odd As DevExpress.XtraReports.UI.XRControlStyle
 		Private PageInfo As DevExpress.XtraReports.UI.XRControlStyle
-		Private TopMargin As DevExpress.XtraReports.UI.TopMarginBand
-		Private BottomMargin As DevExpress.XtraReports.UI.BottomMarginBand
-		Private ReportHeader As DevExpress.XtraReports.UI.ReportHeaderBand
-		Private label1 As DevExpress.XtraReports.UI.XRLabel
-		Private Detail As DevExpress.XtraReports.UI.DetailBand
-		Private xrTable1 As DevExpress.XtraReports.UI.XRTable
-		Private xrTableRow1 As DevExpress.XtraReports.UI.XRTableRow
-		Private xrTableCell2 As DevExpress.XtraReports.UI.XRTableCell
-		Private xrTableCell3 As DevExpress.XtraReports.UI.XRTableCell
-		Private xrTableCell4 As DevExpress.XtraReports.UI.XRTableCell
-		Private groupHeaderBand1 As DevExpress.XtraReports.UI.GroupHeaderBand
-		Private xrLabel1 As DevExpress.XtraReports.UI.XRLabel
 		Private SupplierCategory As DevExpress.XtraReports.UI.CalculatedField
-		Private xrTable2 As DevExpress.XtraReports.UI.XRTable
-		Private xrTableRow2 As DevExpress.XtraReports.UI.XRTableRow
-		Private xrTableCell6 As DevExpress.XtraReports.UI.XRTableCell
-		Private xrTableCell7 As DevExpress.XtraReports.UI.XRTableCell
-		Private xrTableCell8 As DevExpress.XtraReports.UI.XRTableCell
-		Private xrLine1 As DevExpress.XtraReports.UI.XRLine
 	End Class
 End Namespace

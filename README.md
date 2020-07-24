@@ -1,5 +1,6 @@
 # How to process duplicate values in a report
-This example demonstrates how to use the <a href="https://docs.devexpress.com/XtraReports/DevExpress.XtraReports.UI.XRC.ProcessDuplicatesMode">ProcessDuplicatesMode</a> and <a href="https://docs.devexpress.com/XtraReports/DevExpress.XtraReports.UI.XRC.ProcessDuplicatesTarget">ProcessDuplicatesTarget</a> properties to merge a report's duplicate values in WinForms applications.
+
+This example demonstrates how to use the <a href="https://docs.devexpress.com/XtraReports/DevExpress.XtraReports.UI.ProcessDuplicatesMode">ProcessDuplicatesMode</a> and <a href="https://docs.devexpress.com/XtraReports/DevExpress.XtraReports.UI.ProcessDuplicatesTarget">ProcessDuplicatesTarget</a> properties to merge a report's duplicate values in WinForms applications.
 
 Set the report control's **ProcessDuplicatesMode** property to <a href="https://docs.devexpress.com/XtraReports/DevExpress.XtraReports.UI.ProcessDuplicatesMode">Merge</a>. After that, set the **ProcessDuplicatesTarget** property to one of the following values:
 
@@ -7,4 +8,6 @@ Set the report control's **ProcessDuplicatesMode** property to <a href="https://
 
 - <a href="https://docs.devexpress.com/XtraReports/DevExpress.XtraReports.UI.ProcessDuplicatesTarget">Tag</a> to merge  the <a href="https://docs.devexpress.com/XtraReports/DevExpress.XtraReports.UI.XRControl.Tag">XRControl.Tag</a> property's duplicate values. 
 
+The reports look as follows:
 
+![](images/screenshot.gif)

@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.27130.2020
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30320.27
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProcessDuplicatesTarget", "ProcessDuplicatesTarget\ProcessDuplicatesTarget.csproj", "{4AF33BB1-BC7B-45CE-8F99-FCECA1FB7F36}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProcessDuplicatesTarget", "ProcessDuplicatesTarget\ProcessDuplicatesTarget.csproj", "{6648C7C8-23ED-4F60-BD0E-7B940C93DA2B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{4AF33BB1-BC7B-45CE-8F99-FCECA1FB7F36}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4AF33BB1-BC7B-45CE-8F99-FCECA1FB7F36}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4AF33BB1-BC7B-45CE-8F99-FCECA1FB7F36}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4AF33BB1-BC7B-45CE-8F99-FCECA1FB7F36}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6648C7C8-23ED-4F60-BD0E-7B940C93DA2B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6648C7C8-23ED-4F60-BD0E-7B940C93DA2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6648C7C8-23ED-4F60-BD0E-7B940C93DA2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6648C7C8-23ED-4F60-BD0E-7B940C93DA2B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {A1E0E5EB-3C92-438A-A538-82E919C087B6}
+		SolutionGuid = {21AA7137-2F1C-4FF4-8867-87962F689038}
 	EndGlobalSection
 EndGlobal
