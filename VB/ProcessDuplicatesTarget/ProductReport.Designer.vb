@@ -125,7 +125,7 @@
 			' 
 			' label1
 			' 
-			Me.label1.Font = New System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Bold)
+			Me.label1.Font = New DevExpress.Drawing.DXFont("Arial", 14F, DevExpress.Drawing.DXFontStyle.Bold)
 			Me.label1.LocationFloat = New DevExpress.Utils.PointFloat(5.999979F, 6.00001F)
 			Me.label1.Name = "label1"
 			Me.label1.SizeF = New System.Drawing.SizeF(732.9999F, 29.41666F)
@@ -135,7 +135,7 @@
 			' 
 			' xrTable1
 			' 
-			Me.xrTable1.Font = New System.Drawing.Font("Arial", 9F)
+			Me.xrTable1.Font = New DevExpress.Drawing.DXFont("Arial", 9F)
 			Me.xrTable1.LocationFloat = New DevExpress.Utils.PointFloat(0F, 0F)
 			Me.xrTable1.Name = "xrTable1"
 			Me.xrTable1.Padding = New DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 100F)
@@ -192,7 +192,7 @@
 			' xrTable2
 			' 
 			Me.xrTable2.BackColor = System.Drawing.Color.Gainsboro
-			Me.xrTable2.Font = New System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold)
+			Me.xrTable2.Font = New DevExpress.Drawing.DXFont("Arial", 9.75F, DevExpress.Drawing.DXFontStyle.Bold)
 			Me.xrTable2.LocationFloat = New DevExpress.Utils.PointFloat(0F, 41.45832F)
 			Me.xrTable2.Name = "xrTable2"
 			Me.xrTable2.Rows.AddRange(New DevExpress.XtraReports.UI.XRTableRow() { Me.xrTableRow2})
@@ -204,7 +204,7 @@
 			' 
 			Me.xrLabel1.BackColor = System.Drawing.Color.Transparent
 			Me.xrLabel1.ExpressionBindings.AddRange(New DevExpress.XtraReports.UI.ExpressionBinding() { New DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[CompanyName]")})
-			Me.xrLabel1.Font = New System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold)
+			Me.xrLabel1.Font = New DevExpress.Drawing.DXFont("Arial", 12F, DevExpress.Drawing.DXFontStyle.Bold)
 			Me.xrLabel1.ForeColor = System.Drawing.Color.DimGray
 			Me.xrLabel1.LocationFloat = New DevExpress.Utils.PointFloat(0F, 13.95833F)
 			Me.xrLabel1.Multiline = True
@@ -222,7 +222,7 @@
 			' xrTableRow2
 			' 
 			Me.xrTableRow2.Cells.AddRange(New DevExpress.XtraReports.UI.XRTableCell() { Me.xrTableCell6, Me.xrTableCell7, Me.xrTableCell8})
-			Me.xrTableRow2.Font = New System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold)
+			Me.xrTableRow2.Font = New DevExpress.Drawing.DXFont("Arial", 9F, DevExpress.Drawing.DXFontStyle.Bold)
 			Me.xrTableRow2.Name = "xrTableRow2"
 			Me.xrTableRow2.StylePriority.UseFont = False
 			Me.xrTableRow2.Weight = 11.5R
@@ -340,7 +340,7 @@
 			Me.Title.BorderColor = System.Drawing.Color.Black
 			Me.Title.Borders = DevExpress.XtraPrinting.BorderSide.None
 			Me.Title.BorderWidth = 1F
-			Me.Title.Font = New System.Drawing.Font("Arial", 14.25F)
+			Me.Title.Font = New DevExpress.Drawing.DXFont("Arial", 14.25F)
 			Me.Title.ForeColor = System.Drawing.Color.FromArgb((CInt((CByte(75)))), (CInt((CByte(75)))), (CInt((CByte(75)))))
 			Me.Title.Name = "Title"
 			' 
@@ -350,7 +350,7 @@
 			Me.GroupCaption2.BorderColor = System.Drawing.Color.White
 			Me.GroupCaption2.Borders = DevExpress.XtraPrinting.BorderSide.Bottom
 			Me.GroupCaption2.BorderWidth = 2F
-			Me.GroupCaption2.Font = New System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold)
+			Me.GroupCaption2.Font = New DevExpress.Drawing.DXFont("Arial", 8.25F, DevExpress.Drawing.DXFontStyle.Bold)
 			Me.GroupCaption2.ForeColor = System.Drawing.Color.FromArgb((CInt((CByte(228)))), (CInt((CByte(228)))), (CInt((CByte(228)))))
 			Me.GroupCaption2.Name = "GroupCaption2"
 			Me.GroupCaption2.Padding = New DevExpress.XtraPrinting.PaddingInfo(6, 2, 0, 0, 100F)
@@ -362,7 +362,7 @@
 			Me.GroupData2.BorderColor = System.Drawing.Color.White
 			Me.GroupData2.Borders = DevExpress.XtraPrinting.BorderSide.Bottom
 			Me.GroupData2.BorderWidth = 2F
-			Me.GroupData2.Font = New System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold)
+			Me.GroupData2.Font = New DevExpress.Drawing.DXFont("Arial", 8.25F, DevExpress.Drawing.DXFontStyle.Bold)
 			Me.GroupData2.ForeColor = System.Drawing.Color.White
 			Me.GroupData2.Name = "GroupData2"
 			Me.GroupData2.Padding = New DevExpress.XtraPrinting.PaddingInfo(6, 2, 0, 0, 100F)
@@ -374,7 +374,7 @@
 			Me.DetailCaption2.BorderColor = System.Drawing.Color.White
 			Me.DetailCaption2.Borders = DevExpress.XtraPrinting.BorderSide.Left
 			Me.DetailCaption2.BorderWidth = 2F
-			Me.DetailCaption2.Font = New System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold)
+			Me.DetailCaption2.Font = New DevExpress.Drawing.DXFont("Arial", 8.25F, DevExpress.Drawing.DXFontStyle.Bold)
 			Me.DetailCaption2.ForeColor = System.Drawing.Color.White
 			Me.DetailCaption2.Name = "DetailCaption2"
 			Me.DetailCaption2.Padding = New DevExpress.XtraPrinting.PaddingInfo(6, 6, 0, 0, 100F)
@@ -385,7 +385,7 @@
 			Me.DetailData2.BorderColor = System.Drawing.Color.Transparent
 			Me.DetailData2.Borders = DevExpress.XtraPrinting.BorderSide.Left
 			Me.DetailData2.BorderWidth = 2F
-			Me.DetailData2.Font = New System.Drawing.Font("Arial", 8.25F)
+			Me.DetailData2.Font = New DevExpress.Drawing.DXFont("Arial", 8.25F)
 			Me.DetailData2.ForeColor = System.Drawing.Color.Black
 			Me.DetailData2.Name = "DetailData2"
 			Me.DetailData2.Padding = New DevExpress.XtraPrinting.PaddingInfo(6, 6, 0, 0, 100F)
@@ -397,7 +397,7 @@
 			Me.GroupFooterBackground3.BorderColor = System.Drawing.Color.White
 			Me.GroupFooterBackground3.Borders = DevExpress.XtraPrinting.BorderSide.Bottom
 			Me.GroupFooterBackground3.BorderWidth = 2F
-			Me.GroupFooterBackground3.Font = New System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold)
+			Me.GroupFooterBackground3.Font = New DevExpress.Drawing.DXFont("Arial", 8.25F, DevExpress.Drawing.DXFontStyle.Bold)
 			Me.GroupFooterBackground3.ForeColor = System.Drawing.Color.FromArgb((CInt((CByte(228)))), (CInt((CByte(228)))), (CInt((CByte(228)))))
 			Me.GroupFooterBackground3.Name = "GroupFooterBackground3"
 			Me.GroupFooterBackground3.Padding = New DevExpress.XtraPrinting.PaddingInfo(6, 2, 0, 0, 100F)
@@ -409,7 +409,7 @@
 			Me.DetailData3_Odd.BorderColor = System.Drawing.Color.Transparent
 			Me.DetailData3_Odd.Borders = DevExpress.XtraPrinting.BorderSide.None
 			Me.DetailData3_Odd.BorderWidth = 1F
-			Me.DetailData3_Odd.Font = New System.Drawing.Font("Arial", 8.25F)
+			Me.DetailData3_Odd.Font = New DevExpress.Drawing.DXFont("Arial", 8.25F)
 			Me.DetailData3_Odd.ForeColor = System.Drawing.Color.Black
 			Me.DetailData3_Odd.Name = "DetailData3_Odd"
 			Me.DetailData3_Odd.Padding = New DevExpress.XtraPrinting.PaddingInfo(6, 6, 0, 0, 100F)
@@ -417,7 +417,7 @@
 			' 
 			' PageInfo
 			' 
-			Me.PageInfo.Font = New System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold)
+			Me.PageInfo.Font = New DevExpress.Drawing.DXFont("Arial", 8.25F, DevExpress.Drawing.DXFontStyle.Bold)
 			Me.PageInfo.ForeColor = System.Drawing.Color.FromArgb((CInt((CByte(75)))), (CInt((CByte(75)))), (CInt((CByte(75)))))
 			Me.PageInfo.Name = "PageInfo"
 			Me.PageInfo.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F)
@@ -436,8 +436,8 @@
 			Me.ComponentStorage.AddRange(New System.ComponentModel.IComponent() { Me.sqlDataSource1})
 			Me.DataMember = "Products"
 			Me.DataSource = Me.sqlDataSource1
-			Me.Font = New System.Drawing.Font("Arial", 9.75F)
-			Me.Margins = New System.Drawing.Printing.Margins(49, 52, 47, 100)
+			Me.Font = New DevExpress.Drawing.DXFont("Arial", 9.75F)
+			Me.Margins = New DevExpress.Drawing.DXMargins(49, 52, 47, 100)
 			Me.StyleSheet.AddRange(New DevExpress.XtraReports.UI.XRControlStyle() { Me.Title, Me.GroupCaption2, Me.GroupData2, Me.DetailCaption2, Me.DetailData2, Me.GroupFooterBackground3, Me.DetailData3_Odd, Me.PageInfo})
 			Me.Version = "20.1"
 			DirectCast(Me.xrTable1, System.ComponentModel.ISupportInitialize).EndInit()
