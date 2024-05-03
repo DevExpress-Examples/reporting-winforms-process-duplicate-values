@@ -11,7 +11,7 @@ In this example, the adjacent cells in the **Products** column with the same val
 
 The resulting report looks as follows:
 
-![Merge Duplicate Cells Vertically](Images/screenshot.gif)
+![Merge Duplicate Cells Vertically](images/screenshot.gif)
 
 In the report code, the [ProcessDuplicatesMode](https://docs.devexpress.com/XtraReports/DevExpress.XtraReports.UI.XRControl.ProcessDuplicatesMode) property is set to `Merge`. The application allows you to set the [ProcessDuplicatesTarget](https://docs.devexpress.com/XtraReports/DevExpress.XtraReports.UI.XRControl.ProcessDuplicatesTarget) property to `Value` to merge cells with identical data field values, or to `Tag` to merge cells with the identical [Tag](https://docs.devexpress.com/XtraReports/DevExpress.XtraReports.UI.XRControl.Tag) property content.
 
